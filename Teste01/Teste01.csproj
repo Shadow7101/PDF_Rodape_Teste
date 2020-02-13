@@ -55,7 +55,8 @@
     <Compile Include="GeraPdfBase.cs" />
     <Compile Include="GeraPdfExemplo.cs" />
     <Compile Include="GeraPdfHtml.cs" />
-    <Compile Include="ITextEvents.cs" />
+    <Compile Include="MyPdfEvents.cs" />
+    <Compile Include="TextEvents.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

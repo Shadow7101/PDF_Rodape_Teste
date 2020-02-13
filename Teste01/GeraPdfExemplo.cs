@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Teste01
 {
+    /// <summary>
+    /// https://www.nilthakkar.com/2013/11/itextsharpadd-headerfooter-to-pdf.html
+    /// </summary>
     public class GeraPdfExemplo : GeraPdfBase
     {
         internal override void Documento()

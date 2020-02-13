@@ -4,7 +4,10 @@ using System;
 
 namespace Teste01
 {
-    public class ITextEvents : PdfPageEventHelper
+    /// <summary>
+    /// https://www.nilthakkar.com/2013/11/itextsharpadd-headerfooter-to-pdf.html
+    /// </summary>
+    public class TextEvents : PdfPageEventHelper
     {
 
         // This is the contentbyte object of the writer

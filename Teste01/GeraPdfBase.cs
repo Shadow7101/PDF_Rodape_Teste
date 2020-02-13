@@ -16,38 +16,42 @@ namespace Teste01
         {
             string fileName = Path.GetTempPath() + Guid.NewGuid().ToString() + ".pdf";
             //string fileName = System.Reflection.Assembly.GetEntryAssembly().Location + "\\" + string.Format("{0}.pdf", DateTime.Now.ToString(@"yyyyMMdd") + "_" + DateTime.Now.ToString(@"HHmmss"));
-            using (FileStream msReport = new FileStream(fileName, FileMode.Create))
+            using (FileStream fs = new FileStream(fileName, FileMode.Create))
             {
-                //step 1
-                using (pdfDoc = new Document(PageSize.A4, 10f, 10f, 140f, 10f))
+                //criando e estipulando o tipo da folha usada
+                using (pdfDoc = new Document(PageSize.A4))
                 {
                     try
                     {
-                        // step 2
-                        pdfWriter = PdfWriter.GetInstance(pdfDoc, msReport);
-                        pdfWriter.PageEvent = new ITextEvents();
+                        //estibulando o espaçamento das margens que queremos
+                        pdfDoc.SetMargins(40, 40, 70, 40);
+                        //adcionando data de criação
+                        pdfDoc.AddCreationDate();
 
-                        //open the stream 
+                        //criando pdf em branco no disco
+                        pdfWriter = PdfWriter.GetInstance(pdfDoc, fs);
+
+                        //atrelando a classe de eventos da pagina
+                        pdfWriter.PageEvent = new MyPdfEvents();
+
+                        //ABRINDO DOCUMENTO PARA ALTERAÇÕES
                         pdfDoc.Open();
 
                         //Corpo do documento
                         Documento();
 
                         //fecha pdf
-                        if (pdfDoc.IsOpen()) pdfDoc.Close();
+                        if (pdfDoc.IsOpen())
+                            pdfDoc.Close();
                     }
                     catch (Exception ex)
                     {
                         Console.WriteLine(ex.Message);
                     }
-                    finally
-                    {
-                       
-                    }
                 }
             }
-            //Thread.Sleep(3000);
-            if (File.Exists(fileName)) System.Diagnostics.Process.Start(fileName);
+            if (File.Exists(fileName))
+                System.Diagnostics.Process.Start(fileName);
         }
 
         internal abstract void Documento();
