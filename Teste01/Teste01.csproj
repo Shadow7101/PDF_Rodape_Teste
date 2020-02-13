@@ -52,10 +52,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CabecalhosDocumentoAssinado.cs" />
     <Compile Include="GeraPdfBase.cs" />
     <Compile Include="GeraPdfExemplo.cs" />
     <Compile Include="GeraPdfHtml.cs" />
-    <Compile Include="MyPdfEvents.cs" />
+    <Compile Include="CabecalhoDocumentoNaoAssinado.cs" />
     <Compile Include="TextEvents.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

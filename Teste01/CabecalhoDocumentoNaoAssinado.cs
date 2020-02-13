@@ -4,8 +4,16 @@ using System;
 
 namespace Teste01
 {
-    public class MyPdfEvents : PdfPageEventHelper
+    public class CabecalhoDocumentoNaoAssinado : PdfPageEventHelper
     {
+        public CabecalhoDocumentoNaoAssinado(string tituloDoDocumento)
+        {
+            this.TituloDoDocumento = tituloDoDocumento;
+        }
+        /// <summary>
+        /// título do documento
+        /// </summary>
+        private string TituloDoDocumento;
         /// <summary>
         /// Content - corpo do documento
         /// </summary>
@@ -61,14 +69,13 @@ namespace Teste01
 
             string text = "Página " + writer.PageNumber + " de ";
             float right1 = 125;
-            string titulo = "PSTI - Política de Segurança da Tecnologia da Informação";
 
             //Add paging to header
             {
                 cb.BeginText();
                 cb.SetFontAndSize(bf, 12);
                 cb.SetTextMatrix(document.PageSize.GetLeft(40), document.PageSize.GetTop(45));
-                cb.ShowText(titulo);
+                cb.ShowText(this.TituloDoDocumento);
                 cb.SetTextMatrix(document.PageSize.GetRight(right1), document.PageSize.GetTop(45));
                 cb.ShowText(text);
                 cb.EndText();
