@@ -7,7 +7,7 @@ namespace Teste01
     /// <summary>
     /// https://www.nilthakkar.com/2013/11/itextsharpadd-headerfooter-to-pdf.html
     /// </summary>
-    public class TextEvents : PdfPageEventHelper
+    public class SampleTextEvents : PdfPageEventHelper
     {
 
         // This is the contentbyte object of the writer

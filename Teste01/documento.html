@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h5>0. HISTÓRICO DAS REVISÕES</h5>
+        <p>
+            <table class="table table-sm" style="border: 1px solid #cecece;">
+                <thead style="background-color: #333333; color: #ffffff;">
+                    <tr>
+                        <th scope="col">Data</th>
+                        <th scope="col">Revisão Número</th>
+                        <th scope="col">Descrição da alteração</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10/03/2010</td>
+                        <td>00</td>
+                        <td>Implantação</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        <h5>1. PREMISSA</h5>
+        <p>
+            Entende-se que a política de segurança de tecnologia da informação é fundamental para proporcionar
+            aos usuários dos seus ativos um ambiente de trabalho que seja, ao mesmo tempo, harmonioso,
+            colaborativo, produtivo, seguro e com alta disponibilidade.
+        </p>
+        <h5>2. INTRODUÇÃO</h5>
+        <p>
+            Este documento visa normatizar a utilização dos recursos de informática da FDE. Observadas as
+            premissas estabelecidas nesta norma, todas as informações contidas nos recursos de informática
+            devem ser mantidas em alta disponibilidade, de forma a permitir seu uso vinculado ao propósito a
+            que se destinam.
+        </p>
+        <h5>3. DEFINIÇÕES</h5>
+        <p>
+            <strong>
+                3.1. Política de Segurança da Tecnologia da Informação – PSTI<br />
+            </strong>
+            Denomina-se Política de Segurança da Tecnologia da Informação - PSTI o conjunto de controles
+            constituído por padrões, recomendações, estruturas organizacionais e/ou funções de
+            software/hardware que garantam a premissa de segurança da tecnologia de informação.<br />
+        </p>
+        <p>
+            <strong>
+                3.2. Informação<br />
+            </strong>
+            É toda e qualquer instrução ou conhecimento passível de ser armazenado para posterior
+            transmissão
+            ou processamento.<br />
+        </p>
+        <p>
+            <strong>
+                3.3. Padrões e recomendações<br />
+            </strong>
+            A Política de Segurança da Tecnologia de Informação é composta por padrões e
+            recomendações
+        </p>
+        <p style="margin-left: 20px;">
+            3.3.1. Padrões consistem em procedimentos que devem ser obrigatoriamente aplicados e cumpridos
+            para que a segurança seja garantida. Toda norma sobre PSTI deve ser considerada um padrão a
+            menos que explicitamente seja considerada uma recomendação.<br /><br />
+            3.3.2. Recomendações consistem em procedimentos cujo cumprimento é altamente recomendado e
+            expressamente mencionem essa condição.
+        </p>
+        <p>
+            <strong>
+                3.4. Usuário dos ativos de TI<br />
+            </strong>
+            Denomina-se usuário todo profissional regularmente ativo na FDE, empregado ou colaborador, que
+            venha a utilizar os ativos de tecnologia da informação em questão.
+        </p>
+        <p>
+            <strong>
+                3.5. Ativos de tecnologia da informação<br />
+            </strong>
+        </p>
+        <p style="margin-left: 20px;">
+            3.5.1. Entende-se como ativos de tecnologia da informação os hardwares, softwares, dados e
+            informações armazenadas em mídia digital. As informações geradas ou processadas por todo e
+            qualquer usuário dos ativos da entidade, que possuem seus respectivos valores associados, também
+            podem ser chamadas de ativos de TI.
+        </p>
+        <p style="margin-left: 20px;margin-bottom: 0px;">
+            3.5.2. Para a política de segurança em questão, são considerados os seguintes ativos:
+        </p>
+        <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+            a) Físicos: equipamentos
+            computacionais e periféricos, infraestrutura física e lógica de rede,
+            dispositivos de armazenamento de dados, instalações físicas, ambiente, acesso remoto, etc.
+        </div>
+        <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+            b) Softwares: bancos de dados,
+            aplicativos, sistemas operacionais, navegador, ferramentas de
+            desenvolvimento, linguagens de programação, softwares utilitários, sistemas corporativos,
+            gerenciamento de rede, etc.
+        </div>
+        <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+            c) Informacionais: bases de dados, arquivos, documentação de sistemas, manuais, material de treinamento,
+            metodologias e procedimentos operacionais, plano de continuidade dos negócios, etc.
+        </div>
+        <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+            d) Prestação de serviços interno e externo: infraestrutura computacional e desenvolvimento de sistemas.
+        </div>
+        <p>
+            <strong>
+                3.6. Premissas da segurança da informação<br />
+            </strong>
+            Para preservar a segurança da informação, premissas básicas são consideradas:
+        </p>
+        <p style="margin-left: 20px;">
+            3.6.1. Confidencialidade: garantia de que a informação é acessível
+            apenas a pessoas ou processos
+            devidamente autorizados.
+        </p>
+        <p style="margin-left: 20px;">
+            3.6.2. Integridade: salvaguarda da inteireza da informação e dos
+            respectivos métodos de
+            processamento.
+        </p>
+        <p style="margin-left: 20px;">
+            3.6.3. Disponibilidade: garantia de que os usuários ou processos
+            devidamente autorizados obtenham
+            acesso à informação e aos ativos correspondentes sempre que for necessário.
+        </p>
+        <p>
+            <strong>
+                3.7. Segurança de tecnologia da informação<br />
+            </strong>
+            A segurança de TI consiste na união das premissas básicas para a segurança da informação
+            aplicadas
+            no âmbito dos ativos de TI da entidade, juntamente com a premissa de uso adequado de seus
+            ativos:
+        </p>
+        <p style="margin-left: 20px;">
+            3.7.1. Uso adequado dos ativos de TI: todos os ativos de TI deverão ser utilizados estritamente
+            para os fins aos quais foram destinados e, sempre, atendendo à política de segurança da FDE.
+        </p>
+        <p>
+            <strong>
+                3.8. Medidas Disciplinares<br />
+            </strong>
+            Entende-se por medidas disciplinares a aplicação de sanções de ordem administrativa aos usuários
+            que desrespeitarem as condições de uso fixadas nesta PSTI. As medidas disciplinares serão
+            aplicadas nos termos da legislação aplicável e do Regulamento Disciplinar da FDE.
+        </p>
+        <p>
+            <h5>4. ORGANIZAÇÃO E GERENCIAMENTO DA PSTI </h5>
+        </p>
+        <p>
+            <strong>4.1. Elaboração<br /></strong>
+            A elaboração da PSTI é de responsabilidade da DTI, que deverá observar as seguintes etapas:
+        </p>
+
+        <p style="margin-left: 20px;">
+            4.1.1. Elaboração da documentação.
+        </p>
+        <p style="margin-left: 20px;"> 4.1.2. Classificação dos riscos de segurança.</p>
+        <p style="margin-left: 20px;">
+            4.1.3. Seleção dos riscos a serem gerenciados, segundo os aspectos de:<br />
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                a) impacto dos riscos para a organização,
+            </div>
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                b) viabilidade para implantação de controles de segurança,
+            </div>
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                c) avaliação do custo versus benefício para minimização dos riscos.
+            </div>
+        </p>
+        <p style="margin-left: 20px;">
+            4.1.4. Manutenção da política de segurança.
+        </p>
+
+        <p style="margin-left: 20px;">
+            4.1.5. Obtenção de compromissos de colaboração com a PSTI, conforme o Anexo II:<br />
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                a) da alta direção,
+            </div>
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                b) de todos os usuários dos ativos de tecnologia da informação.
+            </div>
+        </p>
+        <p style="margin-left: 20px;">
+            4.1.6. Sensibilização e informação dos usuários sobre a PSTI.
+        </p>
+
+        <p style="margin-left: 20px;">
+            4.1.7. Disseminação das informações relativas à segurança da informação.
+        </p>
+
+        <p>
+            <strong>4.2. Gerenciamento<br /></strong>
+            O gerenciamento da PSTI é de responsabilidade da Comissão de Segurança de Tecnologia da
+            Informação
+            -
+            CSTI. Compete, ainda, à CSTI, analisar e responder aos incidentes e às violações de segurança,
+            bem
+            como apresentar o incidente de segurança e sugerir formalmente medidas disciplinares às alçadas
+            competentes.
+        </p>
+        <p style="margin-left: 20px;">
+            4.2.1. A nomeação dos membros que comporão a CSTI deverá ser feita por meio de portaria
+            específica,
+            que indicará o respectivo presidente, que será responsável pela coordenação dos seus trabalhos.
+        </p>
+        <p style="margin-left: 20px;">
+            4.2.2. A CSTI poderá convidar colaboradores, integrantes ou não dos
+            quadros da FDE, para participar
+            das reuniões, em função de necessidades específicas.
+        </p>
+        <p style="margin-left: 20px;">
+            4.2.3. Os membros da CSTI exercerão suas funções cumulativamente com suas atividades regulares,
+            independentemente de remuneração adicional.
+        </p>
+        <p>
+            <strong>4.3. Administração e Operação</strong>
+        </p>
+        <p style="margin-left: 20px;">
+            4.3.1. A Diretoria de Tecnologia da Informação – DTI é a unidade responsável pela administração
+            e
+            operação da PSTI, além de promover a disseminação do tema à comunidade FDE.
+        </p>
+        <p style="margin-left: 20px;">
+            4.3.2. Os incidentes aferidos pela DTI serão comunicados à CSTI, para a deliberação de medidas
+            de
+            resposta(s) ao(s) incidente(s).
+        </p>
+        <p style="margin-left: 20px;">
+            4.3.3. Entende-se por incidentes de segurança a ocorrência havida pelo não-cumprimento de
+            padrões
+            e
+            recomendações de utilização dos ativos de tecnologia da informação.
+        </p>
+        <p>
+            <strong> 4.4. Planejamento, definição e implementação dos controles de segurança<br /></strong>
+            O planejamento e a definição dos controles de segurança devem ser elaborados pela equipe técnica
+            interna da DTI, podendo eventualmente ser assessorado por consultor ou empresa especializada.
+            Após
+            a
+            definição, a DTI deve ratificar com a CSTI e acompanhar a implementação.
+        </p>
+
+        <p>
+            <strong>
+                4.5. Responsabilidades de usuários dos ativos de tecnologia da informação<br />
+            </strong>
+            Todos os usuários devem:
+        </p>
+        <p style="margin-left: 20px;">
+            4.5.1. Utilizar os ativos de TI mediante as "condições de uso" constantes no ANEXO I - "Padrões
+            e
+            Recomendações de Segurança".
+        </p>
+        <p style="margin-left: 20px;">
+            4.5.2. Respeitar o "código de práticas" constante no ANEXO I - "Padrões e Recomendações de
+            Segurança".
+        </p>
+        <p style="margin-left: 20px;">
+            4.5.3. Manter a integridade, disponibilidade e confidencialidade das informações.
+        </p>
+        <p style="margin-left: 20px;">
+            4.5.4. Utilizar os ativos de TI exclusivamente para os fins autorizados pela FDE e em
+            conformidade
+            com a PSTI.
+        </p>
+
+        <p>
+            <strong>
+                4.6. Da formalização de contratos<br />
+            </strong>
+            Todos os editais, contratos e ajustes celebrados pela FDE em que haja utilização de ativos de TI
+            obedecerão as previsões desta PSTI, que deverá ser parte integrante dos termos respectivos,
+            observado o disposto no item 5.1.
+        </p>
+
+
+        <h5>5. DISPOSIÇÕES FINAIS</h5>
+        <p>
+            <strong>
+                5.1.
+            </strong>
+            A PSTI é composta por esta Norma, pelo ANEXO I - Padrões e Recomendações de Segurança e pelo
+            ANEXO II – Termo de Compromisso para Usuários de Ativos de TI. Eventuais restrições à circulação
+            e
+            disponibilidade de documentos que venham a integrar ou complementar a PSTI deverão ser definidas
+            pela CSTI.
+        </p>
+        <p>
+            <strong>
+                5.2.
+            </strong>
+            A FDE compromete-se a empregar esforços para informar, sensibilizar e conscientizar todos os
+            usuários dos ativos de TI dos termos desta política.
+        </p>
+        <p>
+            <strong>
+                5.3.
+            </strong>
+            A PSTI será revisada periodicamente, de acordo com as necessidades da entidade.
+        </p>
+
+        <p>
+            <strong>
+                5.4.
+            </strong>
+
+            As demais regras previstas nas Normas emitidas pela FDE aplicam-se subsidiariamente a esta
+            política, no que não conflitarem com os termos deste documento.
+        </p>
+
+        <p>
+            <strong>
+                5.5.
+            </strong>
+            Situações não previstas pela PSTI devem ser analisadas pela DTI, com acompanhamento da CSTI.
+        </p>
+
+        <h5>6. DOCUMENTAÇÕES COMPLEMENTARES</h5>
+
+        <h6>ANEXO I – PADRÕES E RECOMENDAÇÕES DE SEGURANÇA</h6>
+        <p>
+            <strong>
+                1. Das condições de uso<br />
+            </strong>
+        </p>
+        <p>
+            1.1. As "condições de uso" definem os padrões e as recomendações de segurança que os usuários
+            devem
+            cumprir para obter acesso aos ativos de TI da organização.
+        </p>
+        <p>1.2. Os ativos de TI alocados na FDE apenas podem ser usados para execução de seus trabalhos.</p>
+        <p>
+            1.3. Ao usar os ativos de TI da entidade, os usuários devem concordar com as seguintes condições:
+        </p>
+        <p>
+            1.3.1. Responsabilidades de cada usuário:
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                a) Utilizar, de forma responsável, profissional, ética e legal os ativos de TI.
+            </div>
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                b) Respeitar a integridade, a disponibilidade, a privacidade e a confidencialidade das
+                informações e
+                o conhecimento da entidade e de outros usuários.
+            </div>
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                c) Respeitar os direitos e as permissões de uso dos ativos de TI concedidos pela entidade.
+            </div>
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                d) Respeitar e seguir o "código de práticas" (item 2) deste documento.
+            </div>
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                e) Seguir as normas e os procedimentos de atendimento aos usuários dos ativos de TI,
+                informando
+                corretamente o problema e o nível de prioridade.
+            </div>
+        </p>
+
+        <p>
+            1.3.2. Restrições de uso
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                a) O usuário dos ativos não terá acesso à infraestrutura computacional da entidade sem que
+                haja
+                o
+                aceite do ‘Termo de Compromisso para Usuários de Ativos de TI’ (ANEXO II) desta política.
+            </div>
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                b) Os ativos de TI não podem ser usados para difusão ou armazenamento de propaganda pessoal
+                ou
+                comercial, aliciamentos, programas destrutivos, material político ou qualquer outro uso
+                inadequado.
+            </div>
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                c) É expressamente proibido o uso da infraestrutura computacional não autorizado pela FDE.
+            </div>
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                d) O uso da infraestrutura computacional é um recurso que pode ser retirado ou restringido a
+                qualquer momento, caso ocorra algum incidente relatado à CSTI.
+            </div>
+        </p>
+        <p>
+            1.3.3. Restrições de conteúdo<br />
+            É considerado expressamente proibido o armazenamento ou transmissão, sob qualquer forma ou meio
+            de
+            comunicação, de conteúdo inapropriado que promova, incite ou instrua atitudes, tais como: roubo,
+            violência, terrorismo, difamação, calúnia, preconceito de qualquer tipo ou classe, uso de
+            drogas,
+            divulgação de pornografia e outras atividades ilícitas.
+        </p>
+        <p>
+            1.3.4. Suporte aos usuários e manutenção dos ativos de TI homologados.
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                a) O suporte aos usuários dos ativos de TI homologados pela entidade fica restrito à equipe
+                técnica
+                da DTI e aos colaboradores por ela autorizados.
+            </div>
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                b) O suporte aos ativos de TI é realizado de acordo com os horários de atendimentos
+                estabelecidos
+                pela FDE por meio de abertura de chamado técnico.
+            </div>
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                c) É de responsabilidade da DTI certificar-se de que o atendimento e a solução proposta
+                seguem
+                os
+                padrões e o tempo estabelecidos.
+            </div>
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                d) A manutenção dos ativos de TI homologados é restrita às empresas contratadas por meio da
+                área
+                de
+                TI, e somente elas poderão promover qualquer intervenção técnica, sob pena de perda de
+                garantia
+                dos
+                ativos.
+            </div>
+        </p>
+        <p>
+            1.3.5. Contingência<br />
+            É reservado à FDE o direito à adoção de medidas emergenciais para preservar a segurança dos seus
+            ativos de TI, incluindo a alteração de contas de usuário, senhas, término de processos, dentre
+            outros.
+        </p>
+
+        <p>
+            <strong>
+                2. Do código de práticas<br />
+            </strong>
+            O "código de práticas" estabelece os padrões e as recomendações para a utilização da
+            infraestrutura
+            computacional.
+        </p>
+        <p>
+            Faz parte do escopo do “código de práticas” indicar quais são as mais adequadas para a utilização
+            dos ativos de TI, observando aspectos peculiares a cada tipo de aplicação ou serviço.
+        </p>
+        <p>
+            O “código de práticas” faz uso dos conceitos de bom senso e discernimento crítico quanto ao bom
+            uso
+            dos ativos de TI. Seu propósito é garantir a convivência harmoniosa entre a tecnologia da
+            informação
+            e os seus usuários.
+        </p>
+        <p>
+            2.1. Hardware<br />
+            Os ativos de hardware de TI devem ter seu uso racional, observando os limites de utilização
+            estabelecidos pela FDE.
+        </p>
+        <p>
+            Os ativos de TI não-pertencentes à entidade poderão ter acesso à rede corporativa, mediante
+            avaliação/ autorização da DTI, o aceite da PSTI e dos limites de utilização estabelecidos pela
+            entidade.
+        </p>
+        <p>
+            É proibido aos usuários:
+        </p>
+        <p style="margin-left: 20px;">
+            2.1.1. Instalar ou alterar as configurações do hardware sem autorização formal da DTI.
+        </p>
+        <p style="margin-left: 20px;">
+            2.1.2. Instalar servidores, computadores, periféricos e acessórios na infraestrutura
+            computacional,
+            sem prévia autorização formal da DTI.
+        </p>
+        <p style="margin-left: 20px;">
+            2.1.3. Promover qualquer manutenção dos ativos de TI, ainda que a título de tentativa.
+        </p>
+
+        <p style="margin-left: 20px;">
+            2.1.4. Das movimentações dos ativos de TI
+            É expressamente proibido o usuário mudar ou remover equipamentos de informática (micros, vídeos,
+            impressoras, etc.) sem prévia anuência da área de tecnologia e a conseqüente autorização
+            formal.<br />
+            O usuário será responsabilizado e deverá arcar com o custo total dos danos causados se danificar
+            o
+            equipamento por deixar de observar a regra acima.
+        </p>
+
+        <p>
+            2.2. Software<br />
+            Os ativos de software de TI devem ter seu uso racional, observando os limites de utilização
+            estabelecidos pela FDE.<br />
+            Os softwares utilizados pela entidade deverão ser protegidos contra danos e perdas,
+            principalmente
+            quanto ao acesso de pessoas não-autorizadas, que possam vir a fazer uso ou efetuarem cópias e
+            distribuição.
+        </p>
+        <p> É proibido aos usuários:</p>
+        <p style="margin-left: 20px;">
+            2.2.1. Copiar softwares da FDE.
+        </p>
+        <p style="margin-left: 20px;">
+            2.2.2. Disponibilizar cópias de softwares para terceiros ou clientes
+            da entidade.
+        </p>
+        <p style="margin-left: 20px;">
+            2.2.3. Instalar softwares. As únicas pessoas autorizadas a realizar a instalação de softwares
+            nos
+            computadores da FDE são as que fazem parte da equipe técnica da DTI.
+        </p>
+        <p style="margin-left: 20px;">2.2.4. Alterar configurações de softwares instalados.</p>
+        <p style="margin-left: 20px;">
+            2.2.5. Utilizar técnicas de engenharia reversa ou decompilar
+            softwares de propriedade da entidade.
+        </p>
+        <p style="margin-left: 20px;">
+            2.2.6. Utilizar licenças de softwares que infrinjam quaisquer patentes
+            ou direitos autorais.
+        </p>
+        <p>
+            2.3. Vírus<br />
+            Os vírus podem causar danos em diversos níveis, podendo afetar a integridade de arquivos de
+            dados,
+            causando prejuízos imensuráveis para a entidade. Cada usuário é responsável por tomar precauções
+            para evitar a contaminação da entidade por vírus de computador.
+        </p>
+        <p>
+            A FDE fornece as ferramentas necessárias para a detecção e a eliminação de vírus de
+            computadores.
+        </p>
+        <p>
+            O antivírus padrão utilizado pela FDE é o ForeFront. Os usuários cujas máquinas, por algum
+            motivo,
+            não apresentem este software instalado devem solicitar a sua instalação à equipe técnica da GIS.
+        </p>
+        <p>Os usuários dos ativos de TI comprometem-se a:</p>
+        <p style="margin-left: 20px;">
+            2.3.1. Não executar programas ou arquivos de fonte desconhecida
+            provenientes da internet.
+        </p>
+        <p style="margin-left: 20px;">
+            2.3.2. Evitar abrir anexos de mensagens de e-mails cujos remetentes
+            são desconhecidos ou que
+            possuam
+            assuntos duvidosos.
+        </p>
+        <p style="margin-left: 20px;">
+            2.3.3. Verificar os arquivos recebidos via internet, redes de
+            terceiros, disquetes, CDs e DVDs,
+            cartão de memória, unidades de disco removível, etc. quanto à existência de vírus, com as
+            ferramentas fornecidas pelo FDE para esta finalidade.
+        </p>
+        <p style="margin-left: 20px;">
+            2.3.4. Comunicar imediatamente à DTI qualquer incidente de vírus ou
+            indícios de que o computador
+            esteja com vírus, como o mal funcionamento ou operações anormais.<br />Caberá exclusivamente à
+            DTI
+            informar os procedimentos a serem adotados sobre novos vírus.
+        </p>
+        <p>2.4. Banco de dados</p>
+        <p style="margin-left: 20px;">
+            2.4.1. As informações contidas nos sistemas de banco de dados da FDE
+            são de seu uso exclusivo.
+        </p>
+        <p style="margin-left: 20px;">
+            2.4.2. É vedada a cópia ou uso não-autorizado destes dados para
+            outros fins que não sejam de
+            interesse da entidade.
+        </p>
+        <p style="margin-left: 20px;">
+            2.4.3. Os usuários devem zelar pela integridade, disponibilidade e
+            confidencialidade destas
+            informações.
+        </p>
+        <p>
+            2.5. Correio eletrônico<br />
+            O sistema de correio eletrônico da FDE poderá ser utilizado somente para atividades relacionadas
+            à
+            instituição e que contribuam positivamente para a entidade.
+        </p>
+        <p> É expressamente proibido:</p>
+        <p style="margin-left: 20px;">
+            2.5.1. Enviar ou ser conivente com conteúdo incompatível com esta
+            política de segurança.
+        </p>
+        <p style="margin-left: 20px;">
+            2.5.2. Enviar mensagens para listas de clientes, fornecedores e
+            parceiros que não sejam de
+            interesse
+            da entidade, sem a devida autorização da área responsável.
+        </p>
+        <p style="margin-left: 20px;">
+            2.5.3. Enviar mensagens que configurem spamming para usuários internos e externos.
+        </p>
+        <p style="margin-left: 20px;">
+            2.5.4. Enviar mensagens com a identificação do remetente alterada ou
+            falsificada.
+        </p>
+        <p style="margin-left: 20px;">
+            2.5.5. Enviar mensagens com o conteúdo alterado ou falsificado e de
+            natureza pornográfica e/ou
+            racista.
+        </p>
+        <p style="margin-left: 20px;">
+            2.5.6. Invadir a privacidade de usuários pelo acesso não-autorizado à
+            sua caixa postal.
+        </p>
+        <p style="margin-left: 20px;">
+            2.5.7. Enviar informações confidenciais da FDE para redes públicas
+            (Internet), sem autorização da
+            Presidência.
+        </p>
+        <p>Cabe ao usuário:</p>
+        <p style="margin-left: 20px;">
+            2.5.8. Informar a DTI caso receba algum tipo de mensagem de origem
+            desconhecida ou indesejada
+            (SPAM).
+        </p>
+        <p style="margin-left: 20px;">
+            2.5.9. Efetuar a manutenção da sua caixa de e-mail, evitando acúmulo
+            de e-mails e arquivos não
+            desejados.
+        </p>
+        <p style="margin-left: 20px;">
+            Em razão da notória precariedade da segurança da maioria dos sistemas
+            de correio eletrônico, via
+            internet, o usuário deve primar pela precaução ao enviar ou receber mensagens da internet.
+        </p>
+        <p style="margin-left: 20px;">
+            Recomenda-se não passar uma única mensagem para um grande grupo de
+            pessoas. Caso o usuário tenha de
+            enviar mensagem para mais de 05 (cinco) destinatários comuns, recomenda-se a indicação de grupos
+            de
+            destinatários (Supervisores, Gerentes, bem como a formação de um novo grupo específico), assim
+            como
+            o uso dos campos correlatos (Bcc, Cco, etc.).
+        </p>
+        <p>
+            2.6. Rede de computadores<br />
+            A rede de computadores da FDE deve ser utilizada de forma proficiente e produtiva, mantendo sua
+            integridade, disponibilidade e confidencialidade das informações e conhecimento.
+        </p>
+        <p style="margin-left: 20px;">
+            2.6.1. Conexões a redes de terceiros<br />
+            É expressamente proibido conectar-se a redes de computadores de terceiros, por meio de outros
+            métodos que não a rede corporativa da FDE. Estão incluídos nesta restrição o uso de modems nos
+            servidores, estações de trabalho e notebooks.
+        </p>
+        <p style="margin-left: 20px;">
+            2.6.2. É expressamente proibido o uso, sem autorização, de softwares incompatíveis com a
+            política
+            de
+            segurança, como programas que monitoram o tráfego da rede, servidores ou qualquer outro elemento
+            de
+            rede da entidade.
+        </p>
+        <p style="margin-left: 20px;">
+            2.6.3. Seja localmente em seu computador ou por meio da rede, os usuários não podem alterar,
+            copiar
+            ou excluir arquivos pertencentes a outro usuário sem primeiro obter sua permissão.
+        </p>
+        <p style="margin-left: 20px;">
+            2.6.4. A rede não deve ser utilizada para transmitir ou armazenar
+            informações que não sejam do
+            interesse ou não contribuam com os objetivos da FDE.
+        </p>
+        <p style="margin-left: 20px;">
+            2.6.5. Ao se ausentar ou sair, recomenda-se que o usuário desconecte-se de seu login aberto ou
+            bloqueie sua estação de trabalho ou notebook, para que não haja utilização indevida dos ativos
+            de
+            TI.
+        </p>
+        <p style="margin-left: 20px;">
+            2.6.6. Todo usuário deve fazer uso racional dos recursos, observando os limites de utilização
+            estabelecidos pela política de segurança da entidade.
+        </p>
+        <p style="margin-left: 20px;">
+            2.6.7. O horário de acesso à rede de computadores restringe-se às normas e aos procedimentos
+            vigentes.
+        </p>
+
+        <p>
+            2.7. Internet<br />
+            A internet é uma rede pública mundial de computadores. Sua diversidade de plataformas e a
+            quantidade
+            de computadores e usuários propiciam o surgimento e disseminação de vírus em variados formatos,
+            conteúdo ilegal e outros incidentes de segurança.
+        </p>
+        <p style="margin-left: 20px;">
+            2.7.1. Conexões à internet<br />
+            Somente é permitida a conexão com a internet por meio da rede corporativa, de acordo com as
+            regras
+            estabelecidas no sistema de segurança da FDE, que poderá a qualquer tempo bloquear acessos a
+            conteúdos que comprometam o uso de banda disponível ou perturbem o bom andamento dos trabalhos.
+        </p>
+        <p style="margin-left: 20px;">
+            2.7.2. Todo o tráfego de utilização da internet será monitorado. Relatórios de utilização serão
+            emitidos periodicamente e divulgados de acordo com os critérios estabelecidos pela CSTI.
+        </p>
+
+        <p style="margin-left: 20px;">
+            2.7.3. Todo o conteúdo recebido ou enviado para a internet será
+            submetido a verificações de
+            segurança para eliminação de vírus e tentativas de invasão do ambiente de rede corporativa.
+        </p>
+
+        <p style="margin-left: 20px;">
+            2.7.4. A FDE não se responsabiliza por problemas ocasionados em
+            virtude do fornecimento de
+            informações pessoais dos seus usuários na internet, tais como: números de cartão de crédito ou
+            contas correntes bancárias e senhas para acesso a sistemas de internet banking.
+        </p>
+        <p style="margin-left: 20px;">
+            2.7.5. Novos recursos na internet, além do acesso à web e ao correio
+            eletrônico, deverão ser
+            liberados mediante prévia análise de riscos de segurança e comprovação da necessidade e/ou
+            benefícios do serviço para entidade.
+        </p>
+
+        <p>
+            2.8. Senhas<br />
+            Recomenda-se a adoção das seguintes práticas:
+        </p>
+        <p>
+            2.8.1. Quando do seu primeiro acesso à rede corporativa, o usuário receberá um aviso automático
+            solicitando uma senha.
+        </p>
+        <p>
+            2.8.2. As senhas devem ser memorizadas, nunca escritas e registradas em papel ou digitalmente.
+        </p>
+        <p>2.8.3. As senhas são individuais e nunca podem ser compartilhadas com outros usuários.</p>
+        <p>
+            2.8.4. As senhas devem ser trocadas a cada 6 (seis) meses, ou imediatamente se comprometidas ou
+            sempre que existir qualquer indicação de possível violação do sistema ou da própria senha.
+        </p>
+        <p>
+            2.8.5. Os administradores de sistema executarão procedimentos periódicos de verificação de
+            vulnerabilidade de senhas, para identificar se a escolha foi inadequada e solicitar a respectiva
+            alteração.
+        </p>
+        <p>
+            2.8.6. As senhas devem ser escolhidas criteriosamente. O usuário deve adotar como regra de
+            formação
+            de senhas:
+        </p>
+        <p>
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                a) Escolher senhas com 6 (seis)
+                a
+                12 (doze) caracteres, compostos sempre por letras e números em
+                conjunto, podendo misturar letra maiúsculas, minúsculas, números e caracteres especiais. Não
+                deverá
+                ser repetido o mesmo caractere por mais de 2 (duas) vezes.
+            </div>
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                b) Mesmo estando os sistemas
+                configurados para minimizar a ocorrência de senhas vulneráveis, nunca
+                deverão ser escolhidas senhas óbvias baseadas em: datas de aniversário da pessoa ou
+                parentes,
+                nomes
+                abreviados, nomes próprios, apelidos, nomes de parentes, números de telefone, dentre outros.
+            </div>
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                c) Nunca utilize como senha o
+                login de acesso à rede ou ao sistema.
+            </div>
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                d) Nunca escolha senhas
+                baseadas
+                em palavras contidas em dicionários. Grande parte dos incidentes de
+                segurança ocorre por meio de métodos de exploração de senhas por força bruta utilizando, por
+                exemplo, todas as palavras de um dicionário armazenadas em um banco de dados como possíveis
+                senhas.
+            </div>
+            <div style="margin-left: 30px; width: 90%; padding-bottom: 5px;">
+                e) Use símbolos do tipo "%",
+                "-"
+                ou "$" para formar a senha.
+            </div>
+        </p>
+        <p> 2.9. Sistemas corporativos</p>
+        <p style="margin-left: 20px;">
+            2.9.1. Os usuários não podem instalar ou utilizar qualquer tipo de
+            sistema ou aplicativos para
+            desenvolvimento de bases de informação, paralelas aos sistemas corporativos adotados e
+            homologados
+            pela FDE.
+        </p>
+        <p style="margin-left: 20px;">
+            2.9.2. São de responsabilidade do usuário todas as informações inseridas por ele nos sistemas
+            corporativos da entidade.
+        </p>
+        <p>
+            2.10. Backup<br />
+            São de responsabilidade da equipe técnica da DTI a segurança e o backup dos dados armazenados no
+            servidor. O período de armazenamento é de 1 (um) mês, podendo ser estendido se solicitado. O
+            backup
+            e a segurança dos dados que não estão no servidor, ou seja, que se encontram nas estações de
+            trabalho, são de inteira responsabilidade do usuário, mesmo assim poderão ser efetuados mediante
+            solicitação à equipe técnica da DTI.
+        </p>
+        <p>2.11. Certificado Digital</p>
+        <p style="margin-left: 20px;">
+            2.11.1. O TOKEN é um dispositivo para armazenamento seguro de
+            certificados digitais que
+            possibilita
+            a assinatura eletrônica de documentos, transmissão de dados e acesso a dados sigilosos, que
+            serão
+            oferecidos aos empregados designados pela Presidência. A assinatura digital é um código
+            associado
+            a
+            uma mensagem eletrônica que permite de forma única e exclusiva, a comprovação da autoria de um
+            determinado conjunto de dados (um arquivo, um e-mail ou uma transação), provando que a pessoa
+            criou
+            ou concorda com um documento assinado digitalmente, como a assinatura de próprio punho comprova
+            a
+            autoria de um documento escrito.
+        </p>
+        <p style="margin-left: 20px;">
+            2.11.2. A DTI, por meio de Gerência que indicar, é a unidade
+            responsável na FDE pela
+            administração
+            do uso do TOKEN e por dar orientações para sua obtenção.
+        </p>
+        <p style="margin-left: 20px;">2.11.3. A assinatura digital terá validade por três anos.</p>
+        <p style="margin-left: 20px;">
+            2.11.4. O empregado, em caso de perda, será responsável pelos custos
+            de reposição, bem como por
+            comparecer pessoalmente no local em que o novo dispositivo será entregue.
+        </p>
+        <p style="margin-left: 20px;">
+            2.11.5. O empregado que incidir em esquecimentos reiterados do TOKEN
+            necessário para desempenhar
+            suas funções na FDE terá seu caso examinado pela CSTI, com a possibilidade de imposição de
+            penalidade disciplinar, observado o processo administrativo pertinente.
+        </p>
+        <p>2.12. Da utilização dos equipamentos de impressão/cópia disponíveis na rede da FDE</p>
+        <p style="margin-left: 20px;">
+            2.12.1. Ao enviar algum documento para impressão, verifique se o
+            documento foi efetivamente impresso
+            e não se esqueça de retirá-lo do dispositivo de impressão.
+        </p>
+        <p style="margin-left: 20px;">
+            2.12.2. Ao constatar algum tipo de falha durante a impressão e caso o
+            documento seja classificado
+            como confidencial, utilize os equipamentos fragmentadores de papel para inutilizá-lo.
+        </p>
+        <p style="margin-left: 20px;">
+            2.12.3. Não deixe documentos impressos nas mesas próximas às
+            impressoras.
+        </p>
+        <p style="margin-left: 20px;">
+            2.12.4. A DTI poderá a qualquer tempo, seguindo as diretrizes da
+            CSTI, implementar o uso de cotas de
+            impressão.
+        </p>
+        <p>2.13. Compartilhamento de Permissões</p>
+        <p style="margin-left: 20px;">
+            2.13.1. Não é permitido acessar qualquer computador com uma conta
+            que não seja do próprio usuário.
+        </p>
+        <p style="margin-left: 20px;">
+            2.13.2. Com relação aos dados contidos na máquina local (drive “C”)
+            dos usuários, estes podem ser
+            apenas acessados pelos seus respectivos donos e usuários por ele autorizados. Os pedidos de
+            acesso
+            para mais usuários devem ser feitos pela Intranet no site http://Intranet ou por telefone para a
+            GIS.
+        </p>
+        <p style="margin-left: 20px;">
+            2.13.3. Não é permitida qualquer ação que tenha o objetivo de
+            acessar de forma não autorizada os
+            dados de outros usuários, bem como os dados armazenados nos servidores que não sejam claramente
+            de
+            acesso público.
+        </p>
+        <p style="margin-left: 20px;">
+            2.13.4. Não é permitido que os usuários compartilhem pastas em seus computadores a fim de evitar
+            brechas de segurança. Caso necessitem compartilhar dados, os usuários deverão solicitar à equipe
+            técnica da DTI, por meio de sua gerência designada, informando os usuários que terão acesso e o
+            nível de acesso (modificação ou somente leitura) para que seja criada área específica no
+            servidor.
+        </p>
+        <p>
+            3. Da formalização
+        </p>
+        <p>
+            3.1. Criação de Contas de Usuário<br />
+            Qualquer profissional regularmente ativo na FDE, seja concursado, comissionado ou terceirizado
+            terá
+            direito à criação de uma conta de acesso. Para solicitar a criação de uma conta deve-se abrir um
+            chamado pelo site http://Intranet ou por e-mail à área responsável da DTI. Ao abrir a conta, o
+            novo
+            usuário terá os seguintes itens à sua disposição:
+        </p>
+        <p style="margin-left: 20px;">
+            3.1.1. Um user-name (nome de usuário) que deverá ser utilizado para
+            autenticação nos Sistemas
+            Operacionais das estações de trabalho e Aplicativos da FDE.
+        </p>
+        <p style="margin-left: 20px;">
+            3.1.2. Uma área no servidor que oferece espaço em disco para o
+            usuário armazenar dados da FDE (esse
+            espaço estará disponível mediante solicitação).
+        </p>
+        <p style="margin-left: 20px;">3.1.3. Acesso ao site da Intranet.</p>
+        <p style="margin-left: 20px;">
+            3.1.4. Acesso à Internet (desde que autorizado pelo superior
+            imediato).
+        </p>
+        <p style="margin-left: 20px;">
+            3.1.5. Uma conta de e-mail institucional (desde que solicitado pelo
+            superior imediato).
+        </p>
+        <p style="margin-left: 20px;">
+            3.2. As contas de usuário são pessoais, intransferíveis e devem ser
+            utilizadas somente pelo próprio
+            usuário, correndo por conta desse qualquer uso indevido.
+        </p>
+        <p>
+            3.3. O padrão para a criação do nome de usuário é definido pela GIS, não podendo ser alterado.
+        </p>
+        <p>
+            3.4. Termo de Compromisso para Usuários de Ativos de TI<br />
+            Para fazer uso de quaisquer ativos de TI, todos os usuários deverão previamente assinar o "Termo
+            de
+            Compromisso para Usuários de Ativos de TI", ANEXO II, que trata do "de acordo" do usuário aos
+            padrões e às recomendações estabelecidas pela política de segurança. Esse termo faz parte dos
+            contratos a serem firmados a partir da data de aprovação da PSTI. Para os contratos já firmados,
+            o
+            termo deverá ser formalizado à parte e ser incorporado à documentação do contrato do usuário
+            pertinente.
+        </p>
+        <p> 3.5. Exclusão de Contas de Usuários</p>
+        <p style="margin-left: 20px;">
+            3.5.1. Periodicamente ocorrerá o processo de Recadastramento, que
+            visa eliminar as contas de
+            usuários não ativos. Esse processo geralmente ocorre nos primeiros dias de cada mês e é
+            automatizado, bastando ao usuário utilizar a conta normalmente para permanecer ativo.
+        </p>
+        <p style="margin-left: 20px;">
+            3.5.2. Quando o usuário for desligado da FDE haverá bloqueio
+            automático de acesso à rede de
+            computadores, sendo inibido o seu acesso a qualquer arquivo nela armazenado. Os arquivos de uso
+            pessoal (agendas e outros), quando solicitados, serão gravados em mídia que o empregado definir
+            (disquetes, zip drive, etc.) e disponibilizados para sua retirada.
+        </p>
+        <p style="margin-left: 20px;">
+            3.5.3. A Gerência de Recursos Humanos - GRH informará à DTI as
+            contratações e as rescisões de
+            empregados, visando a garantir a segurança contra acessos indevidos após o término do período
+            estabelecido para utilização dos ativos de TI.
+        </p>
+        <p style="margin-left: 20px;">
+            3.5.4. A DTI poderá providenciar backup (cópia) das informações do
+            usuário que estiver em processo
+            de rescisão contratual, quando solicitado pelo gerente da área pertinente, e encaminhar essas
+            informações ao mesmo.
+        </p>
+        <p>
+            4. Do monitoramento de tráfego e segurança<br />
+            Os ativos de TI e quaisquer informações e conhecimento neles armazenados pertencem à FDE, sendo
+            assim, serão submetidos a processos de monitoramento de tráfego e segurança, garantindo
+            estabilidade, integridade, disponibilidade e confidencialidade do ambiente. A entidade não
+            necessitará de qualquer tipo de aviso ou autorização judicial para executar tais ações.
+        </p>
+
+
+
+
+        <p>
+            5. Da auditoria de conteúdo<br />
+            Os ativos de TI e quaisquer informações e conhecimento neles armazenados pertencem à FDE, sendo
+            assim, poderão ser submetidos a processos de auditoria de conteúdo, caso ocorram incidentes de
+            segurança. Tal processo só poderá ser autorizado pela Presidência.
+
+            Em caso de auditoria na máquina, os arquivos salvos no drive “C”, que sejam de responsabilidade
+            do
+            usuário, serão auditados com a sua presença.
+        </p>
+        <p>
+            6. Da comunicação dos incidentes e medidas disciplinares
+        </p>
+        <p style="margin-left: 20px;">
+            6.1. Comunicação dos Incidentes
+            A conivência ou omissão por parte dos usuários perante os incidentes de segurança é considerada
+            como
+            grave incidente de segurança, podendo acarretar a imposição de medidas disciplinares, nos termos
+            do
+            item 6.2.
+
+        </p>
+        <p style="margin-left: 20px;">
+            6.2. Medidas Disciplinares><br />
+            Os usuários estarão sujeitos à aplicação de medidas disciplinares nos casos de incidentes desta
+            política de segurança, nos termos da legislação aplicável e do Regulamento Disciplinar da FDE,
+            conforme o caso.
+        </p>
+
+        <h6>ANEXO II - TERMO DE COMPROMISSO PARA USUÁRIOS DE ATIVOS DE TI</h6>
+
+        <p>
+            Este termo de compromisso aplica-se a todos os usuários de ativos de tecnologia da informação
+            da FDE.
+        </p>
+        <p><strong>Termo de Compromisso</strong></p>
+        <p>
+            Declaro que li e estou de acordo com a Política de Segurança da Tecnologia da Informação e com
+            os Padrões e Recomendações de Segurança da FDE, tendo ciência de todo o seu conteúdo.
+        </p>
+        <p>
+            Comprometo-me a preservar a integridade, a disponibilidade e a confidencialidade das informações
+            obtidas durante a vigência do contrato com a FDE, mesmo após o seu encerramento.
+        </p>
+        <p>
+            Declaro, ainda, estar ciente de que incidentes contrários à política de segurança poderão gerar
+            a aplicação de medidas disciplinares, nos termos da legislação vigente e no Regulamento
+            Disciplinar da FDE, conforme o caso.
+        </p>
+        <p>São Paulo XX de XXXXXX de XXXX</p>
+        <p></p>
+        <p><strong>GLOSSÁRIO</strong></p>
+        <p>
+            <b>Antivírus</b><br />
+            Programa utilizado para descontaminar um computador ou rede que estiver infectada com vírus,
+            worm e códigos maliciosos, bem como fornecer proteção contra novas infestações. Esses programas
+            precisam ser atualizados com freqüência para garantir sua eficácia.
+        </p>
+        <p>
+            <b>Aplicativo/Software</b><br />
+            Programa de computador desenvolvido para executar uma função específica, normalmente para o
+            usuário. Em alguns casos, pode desempenhar funções para outros programas como para o sistema
+            operacional.
+        </p>
+        <p>
+            <b> Backup</b><br />
+            Rotina de segurança utilizada para a armazenagem, normalmente em mídia removível, de toda ou
+            parte das informações existentes nos discos rígidos ou na rede, permitindo a recuperação de
+            dados
+            eventualmente perdidos ou danificados por incidente.
+        </p>
+        <p>
+            <b>CD-ROM</b><br />
+            Substituto natural da unidade de disco flexível, a unidade de CD-ROM (Compact Disc-Read Only
+            Memory) é utilizada para a leitura de discos CD (dados e som), cujo acesso é mais rápido e
+            confiável e tem capacidade de armazenamento de até 700 MB.
+        </p>
+        <p>
+            <b>Cartão de memória</b><br />
+            Cartão com chip que permite o armazenamento de informações.
+        </p>
+
+        <p>
+            <b>Correio eletrônico</b><br />
+            Ferramenta utilizada para a troca de mensagens por meio eletrônico, seja dentro de uma rede
+            privada
+            ou pela internet. Podem-se utilizar programas de apoio como o Microsoft Outlook ou serviços de
+            correio na internet (web mail), como o Hotmail.
+        </p>
+
+        <p>
+            <b>Disco Flexível</b><br />
+            Unidade de acesso para leitura e gravação de discos flexíveis (disquetes), que têm baixa
+            capacidade
+            de armazenagem (1,44 Mb), baixa segurança e velocidade de acesso.
+        </p>
+
+        <p>
+            <b>Drive</b><br />
+            1. Qualquer unidade de acesso (disco flexível, disco rígido, CD-ROM).<br />
+            2. Pequenas unidades de código que contêm informações sobre o funcionamento de determinado<br />
+            dispositivo necessário para sua instalação e/ou configuração.
+        </p>
+
+
+        <p>
+            <b>DVD-ROM</b><br />
+            A unidade de DVD-ROM (Digital Vídeo Disc-Read Only Memory) é utilizada para a leitura de discos
+            DVD
+            (dados e som), cujo acesso é mais rápido e confiável e tem capacidade de armazenamento de até
+            4,7
+            GB. Como o CD-ROM só permite ler informações gravadas em DVD, a solução dessa limitação são os
+            drives de DVDR-ROM (Digital Vídeo Disc Recordable-Read Only Memory).
+        </p>
+
+
+
+        <p>
+            <b>Estação de trabalho</b><br />
+            Designação dada ao computador de acesso do usuário. A estação de trabalho pode ser um desktop
+            completo, com todos os dispositivos típicos de um PC ou ser uma máquina mais enxuta, deixando
+            funções como armazenamento para serem executadas pelo servidor.
+        </p>
+
+        <p>
+            <b>Hardware</b><br />
+            Designação genérica de todo tipo de equipamento de informática, por exemplo, computador, discos
+            rígidos, memória, impressora, scanner, entre outros.
+        </p>
+
+        <p>
+            <b>Help Desk</b><br />
+            Serviço de apoio aos usuários para resolver problemas técnicos.
+        </p>
+
+        <p>
+            <b>Internet</b><br />
+            Rede mundial de computadores, conhecida também por web.
+        </p>
+
+        <p>
+            <b>Intranet</b><br />
+            Rede de computadores interna de uma empresa ou instituição que usa a tecnologia da internet.
+        </p>
+
+        <p>
+            <b>Login</b><br />
+            Identificação para acesso a um determinado computador ou sistema.
+        </p>
+
+        <p>
+            <b>Modem</b><br />
+            Dispositivo utilizado para conexão do computador a uma rede remota por meio de uma conexão
+            discada.
+            A velocidade padrão atual desses dispositivos é 56 kbps.
+        </p>
+
+        <p>
+            <b>Notebook</b><br />
+            Computador portátil que traz como principal característica a integração e a miniaturização da
+            maior
+            parte dos componentes, tornando-o leve e de pequenas dimensões. Muitos notebooks, hoje, têm
+            capacidade de processamento similar aos desktops.
+        </p>
+
+        <p>
+            <b>Periférico</b><br />
+            Denominação dada a todo dispositivo utilizado para comunicação ou interface entre o computador e
+            o
+            usuário ou entre o computador e outro computador. Entram nesta categoria, por exemplo, modem,
+            impressora, scanner, entre outros.
+        </p>
+
+        <p>
+            <b>Rede</b><br />
+            Genericamente, um conjunto de computadores ligados que se comunicam entre si.
+        </p>
+
+        <p>
+            <b>Servidor</b><br />
+            Computador que provê recursos para outros computadores da rede, tais como: armazenamento de
+            dados,
+            impressão, acesso discado etc.
+        </p>
+
+        <p>
+            <b>Spamming</b><br />
+            Denominação dada a mensagens de correio eletrônico enviadas e não-solicitadas. Essas mensagens,
+            na
+            maior parte das vezes, têm o objetivo de vender um produto ou fazer propaganda de determinado
+            produto ou serviço não homologado pela entidade.
+        </p>
+
+
+        <p>
+            <b>Token</b><br />
+            O Token é um dispositivo de certificação digital de uso pessoal que possibilita a assinatura
+            eletrônica de documentos, transmissão de dados e acesso a dados sigilosos. A assinatura digital
+            é
+            um
+            código associado a uma mensagem eletrônica que permite de forma única e exclusiva, a comprovação
+            da
+            autoria de um determinado conjunto de dados (um arquivo, um e-mail ou uma transação), provando
+            que
+            a
+            pessoa criou ou concorda com um documento assinado digitalmente, como a assinatura de próprio
+            punho
+            comprova a autoria de um documento escrito.
+        </p>
+
+        <p>
+            <b>Vírus</b><br />
+            Denominação dada a pequenos programas desenvolvidos para causar danos em diversos níveis,
+            podendo
+            afetar a integridade de arquivos de dados (removendo partes ou arquivos por completo),
+            prejudicar
+            um
+            computador em particular ou toda a rede de uma empresa ou mesmo milhões de computadores por meio
+            da
+            internet. Propagam-se por meio do correio eletrônico e aplicativos ilegalmente distribuídos e,
+            por
+            causa das tecnologias que vêm sendo empregadas na criação dessas pragas virtuais, podem se
+            espalhar
+            por milhões de máquinas em poucas horas, causando prejuízos enormes para empresas e pessoas
+            físicas.
+        </p>
+
+        <p>
+            <b>Web</b><br />
+            "Teia". Abreviatura de World Wide Web (teia mundial). Conjunto de computadores que funcionam com
+            o
+            protocolo de comunicação HTTP e exibem arquivos em linguagem HTML.
+        </p>
+    </body>
+
+</html>

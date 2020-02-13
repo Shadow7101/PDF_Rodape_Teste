@@ -57,7 +57,7 @@
     <Compile Include="GeraPdfExemplo.cs" />
     <Compile Include="GeraPdfHtml.cs" />
     <Compile Include="CabecalhoDocumentoNaoAssinado.cs" />
-    <Compile Include="TextEvents.cs" />
+    <Compile Include="SampleTextEvents.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
