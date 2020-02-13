@@ -11,7 +11,7 @@ namespace Teste01
 {
     public class GeraPdf
     {
-        private void CreatePDF()
+        public static void Gerar()
         {
             string fileName = Path.GetTempPath() + Guid.NewGuid().ToString() + ".pdf";
             //string fileName = System.Reflection.Assembly.GetEntryAssembly().Location + "\\" + string.Format("{0}.pdf", DateTime.Now.ToString(@"yyyyMMdd") + "_" + DateTime.Now.ToString(@"HHmmss"));
@@ -41,17 +41,14 @@ namespace Teste01
                         }
 
                         pdfDoc.Close();
-                        if (File.Exists(fileName)) System.Diagnostics.Process.Start(fileName);
                     }
                     catch (Exception ex)
                     {
                         Console.WriteLine(ex.Message);
                     }
-
                     finally
                     {
-
-
+                        if (File.Exists(fileName)) System.Diagnostics.Process.Start(fileName);
                     }
 
                 }

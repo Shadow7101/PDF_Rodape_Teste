@@ -10,6 +10,7 @@ namespace Teste01
     {
         static void Main(string[] args)
         {
+            GeraPdf.Gerar();
         }
     }
 }
