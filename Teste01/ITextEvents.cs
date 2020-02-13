@@ -45,11 +45,11 @@ namespace Teste01
             }
             catch (DocumentException de)
             {
-                //handle exception here
+                Console.WriteLine(de.Message);
             }
-            catch (System.IO.IOException ioe)
+            catch (System.IO.IOException io)
             {
-                //handle exception here
+                Console.WriteLine(io.Message);
             }
         }
 

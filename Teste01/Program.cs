@@ -10,7 +10,8 @@ namespace Teste01
     {
         static void Main(string[] args)
         {
-            GeraPdf.Gerar();
+            var pdf = new GeraPdfHtml();
+            pdf.Gerar();
         }
     }
 }
