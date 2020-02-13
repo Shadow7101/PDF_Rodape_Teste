@@ -24,7 +24,7 @@ namespace Teste01
                     try
                     {
                         //estibulando o espaçamento das margens que queremos
-                        pdfDoc.SetMargins(40, 40, 70, 40);
+                        pdfDoc.SetMargins(40, 40, 60, 50);
                         //adcionando data de criação
                         pdfDoc.AddCreationDate();
 

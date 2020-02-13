@@ -60,30 +60,39 @@ namespace Teste01
             iTextSharp.text.Font baseFontBig = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 12f, iTextSharp.text.Font.BOLD, iTextSharp.text.BaseColor.BLACK);
 
             string text = "Página " + writer.PageNumber + " de ";
+            float right1 = 125;
+            string titulo = "PSTI - Política de Segurança da Tecnologia da Informação";
 
             //Add paging to header
             {
                 cb.BeginText();
                 cb.SetFontAndSize(bf, 12);
-                cb.SetTextMatrix(document.PageSize.GetRight(200), document.PageSize.GetTop(45));
+                cb.SetTextMatrix(document.PageSize.GetLeft(40), document.PageSize.GetTop(45));
+                cb.ShowText(titulo);
+                cb.SetTextMatrix(document.PageSize.GetRight(right1), document.PageSize.GetTop(45));
                 cb.ShowText(text);
                 cb.EndText();
                 float len = bf.GetWidthPoint(text, 12);
                 //adcionando o total de páginas
-                cb.AddTemplate(headerTemplate, document.PageSize.GetRight(200) + len, document.PageSize.GetTop(45));
+                cb.AddTemplate(headerTemplate, document.PageSize.GetRight(right1) + len, document.PageSize.GetTop(45));
             }
 
             //Add paging to footer
             {
                 cb.BeginText();
                 cb.SetFontAndSize(bf, 12);
-                cb.SetTextMatrix(document.PageSize.GetRight(180), document.PageSize.GetBottom(30));
+                cb.SetTextMatrix(document.PageSize.GetRight(right1), document.PageSize.GetBottom(30));
                 cb.ShowText(text);
                 cb.EndText();
                 float len = bf.GetWidthPoint(text, 12);
                 //adcionando o total de páginas
-                cb.AddTemplate(footerTemplate, document.PageSize.GetRight(180) + len, document.PageSize.GetBottom(30));
+                cb.AddTemplate(footerTemplate, document.PageSize.GetRight(right1) + len, document.PageSize.GetBottom(30));
             }
+
+            //Move the pointer and draw line to separate header section from rest of page
+            cb.MoveTo(40, document.PageSize.GetTop(50));
+            cb.LineTo(document.PageSize.Width - 40, document.PageSize.GetTop(50));
+            cb.Stroke();
 
             //Move the pointer and draw line to separate footer section from rest of page
             cb.MoveTo(40, document.PageSize.GetBottom(50));
@@ -101,13 +110,13 @@ namespace Teste01
                 headerTemplate.BeginText();
                 headerTemplate.SetFontAndSize(bf, 12);
                 headerTemplate.SetTextMatrix(0, 0);
-                headerTemplate.ShowText((writer.PageNumber - 1).ToString());
+                headerTemplate.ShowText((writer.PageNumber).ToString());
                 headerTemplate.EndText();
 
                 footerTemplate.BeginText();
                 footerTemplate.SetFontAndSize(bf, 12);
                 footerTemplate.SetTextMatrix(0, 0);
-                footerTemplate.ShowText((writer.PageNumber - 1).ToString());
+                footerTemplate.ShowText((writer.PageNumber).ToString());
                 footerTemplate.EndText();
             }
             catch (DocumentException de)
