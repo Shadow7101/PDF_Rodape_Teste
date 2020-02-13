@@ -40,7 +40,7 @@ namespace Teste01
                         else
                         {
                             //estibulando o espaçamento das margens que queremos
-                            pdfDoc.SetMargins(40, 40, 60, 50);
+                            pdfDoc.SetMargins(40, 40, 60, 80);
                             //para documentos assinados
                             pdfWriter.PageEvent = new CabecalhosDocumentoAssinado(tituloDoDocumento, nome, cpf, hash);
                         }
